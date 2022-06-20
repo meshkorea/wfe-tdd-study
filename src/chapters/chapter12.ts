@@ -36,8 +36,8 @@ export class Money implements Expression {
     return `${this.amount} ${this._currency}`;
   }
 
-  public plus(added: Money): Expression {
-    return new Money(this.amount + added.amount, this._currency);
+  public plus(addend: Money): Expression {
+    return new Money(this.amount + addend.amount, this._currency);
   }
 }
 
